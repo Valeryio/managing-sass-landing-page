@@ -191,7 +191,6 @@ header
 
   header .button
   {
-    border: 1px solid lime;
     display: none;
   }
 
@@ -324,12 +323,7 @@ p
 .p-32
 {
   max-width: 28rem;
-}
-
-.hey
-{
-  color: white;
-  border: 1px solid green;
+  text-align: center;
 }
 
 .cta 
@@ -340,7 +334,7 @@ p
 
 @media (min-width: 40em) {
   
-  .cta p
+  .hey
   {
     text-align: center;
   }
@@ -357,29 +351,53 @@ p
   inset: 0;
   opacity: .1;
   position: absolute;
-  background-position: -15em -5rem, 65rem -45em;
+  background-position: -15em -15rem, 65rem -45em;
   background-image: url('../public/images/bg-tablet-pattern.svg'),
                     url('../public/images/bg-tablet-pattern.svg');
   background-repeat: no-repeat;
 }
 
-.footer
-{
 
-}
+/*Styles for the footer*/
+
 
 
 .footer-intern-container
 {
   display: flex;
   flex-wrap: wrap;
-  gap: max(2rem, 4rem);
+  align-items: center;
+  justify-content: space-between;
+  gap: max(2rem, 3rem);
 }
 
 .footer-nav
 {
   columns: 2;
   gap: 4rem;
+  text-align: left;
+}
+
+.footer-intern-container div:first-child,
+.footer-intern-container div:last-child
+{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.footer-form form
+{
+  display: flex;
+  gap: 1rem;
+}
+
+input[type="email"]
+{
+  outline: none;
+  border: none;
+  padding-left: 1rem;
+  border-radius: 2rem;
 }
 
 .footer-nav a
@@ -398,13 +416,32 @@ p
 {
   max-height: 4rem;
   display: flex;
+  padding: 0;
   gap: 2rem;
-  border: 1px solid white;
 }
 
 .social-list img
 {
-
-  width: 3rem;
+  width: 2rem;
   min-width: 1.5rem;
+}
+
+footer p
+{
+  color: white
+}
+
+
+@media (max-width: 50em) {
+  .logo
+  {
+    min-width: 12rem;
+  }
+
+  .footer-intern-container div:first-child,
+  .footer-intern-container div:last-child
+  {
+    width: 100%;
+    align-items: center;
+  }
 }

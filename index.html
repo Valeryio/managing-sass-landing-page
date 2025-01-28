@@ -8,7 +8,7 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Manage landing page</title>
 </head>
@@ -18,11 +18,11 @@
         <div class="container" >
           <div class="nav-wrapper">
             <a href="#">
-              <img src="/icons/logo.svg" alt="This is the logo">
+              <img src="./public/icons/logo.svg" alt="This is the logo">
             </a>
             <button class="mobile-nav-toggle" aria-controls="primary-navigation">
-              <img src="/icons/icon-hamburger.svg" class="icon-hamburger" aria-hidden="true" alt="">
-              <img src="/icons/icon-close.svg" class="icon-close" aria-hidden="true" alt="">
+              <img src="./public/icons/icon-hamburger.svg" class="icon-hamburger" aria-hidden="true" alt="">
+              <img src="./public/icons/icon-close.svg" class="icon-close" aria-hidden="true" alt="">
               <span class="visually-hidden" >Menu</span>
             </button>
             <nav class=" primary-navigation" >
@@ -55,7 +55,7 @@
                 <button class="button">  Get Started</button>
               </div>
               <div>
-                <img src="/icons/illustration-intro.svg" alt="An illustration">
+                <img src="./public/icons/illustration-intro.svg" alt="An illustration">
               </div>
             </div>
           </div>
@@ -131,7 +131,7 @@
             <div class="container">
               <div class="even-columns vertical-align-center">
                 <div>
-                  <p class="fs-secondary-heading text-neutral-400 p-32 hey fw-bold">
+                  <p class="fs-secondary-heading text-neutral-400 p-32 fw-bold">
                     Simplify how your team works today.
                   </p>
                 </div>
@@ -147,11 +147,11 @@
     </main>
 
     <footer class="bg-secondary-400 padding-block-700" >
-      <div class="container" style="border: 1px solid white;">
-        <div class="footer-intern-container" style="border: 1px solid white;">
-          <div>
+      <div class="container" >
+        <div class="footer-intern-container" >
+          <div class="footer-main-div" >
             <a href="#">
-              <img src="/icons/logo.svg" alt="This is the logo">
+              <img src="./public/icons/logo.svg" class="logo" alt="This is the logo">
             </a>
             <ul role="list" aria-label="social list" class="social-list">
               <li>
@@ -196,13 +196,13 @@
             </nav>
           </div>
 
-          <div style="border: 2px solid violet">
+          <div class="footer-form" >
             <form action="">
-              <input type="email">
-              <button class="" >Go</button>
+              <input type="email" placeholder="Email">
+              <button class="button" >Go</button>
             </form>
 
-            <p style="color: white; border: 2px solid violet;">
+            <p>
               Copyright 2020. All Rights Reserved
             </p>
           </div>
